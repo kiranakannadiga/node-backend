@@ -5,10 +5,8 @@ import noteRouter from './note.route.js';
 
 //create a route with
 const indexRouter = express.Router();
-
-// indexRouter.use("/api/vi/users", userRouter);
-
-indexRouter.use("/api/vi/notes", noteRouter);
+indexRouter.use("/api/v1/users", userRouter);
+indexRouter.use("/api/v1/notes", noteRouter);
 
 
 //export 
