@@ -10,7 +10,7 @@ const updateNote = async(req, res) => {
             res.status(400).send(new ApiResponse(400, null, "Required fields are missing"))
         }
 
-        const result = await Note.updateMany({
+        const result = await Note.create({
             title,
             content
         })
